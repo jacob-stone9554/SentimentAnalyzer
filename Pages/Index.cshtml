@@ -1,0 +1,13 @@
+﻿@page
+@model IndexModel
+@{
+    ViewData["Title"] = "Home page";
+}
+
+<form method="post">
+    <label asp-for="input">Enter a restaurant review</label>
+    <input asp-for="input" />
+    <button type="submit" class="btn btn-primary">Submit</button>
+</form>
+
+<p>@Model.result</p>
